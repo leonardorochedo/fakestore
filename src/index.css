@@ -22,6 +22,7 @@
 h1, h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: var(--title-color);
+  margin: 1rem 0;
 }
 
 p {
@@ -33,4 +34,9 @@ p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: var(--text-color);
   text-decoration: none;
+  transition: .3s;
+}
+
+.link:hover {
+  color: var(--title-color);
 }
