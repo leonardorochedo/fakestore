@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 
 import { Link, useParams } from "react-router-dom";
 
+import { Navbar } from '../../components/Navbar/Navbar';
+
 import api from '../../utils/api';
 
 export function CategoryProducts() {
@@ -18,8 +20,8 @@ export function CategoryProducts() {
 
     return (
         <div className="container">
-            <Link to="/">Back to home</Link>
-            <h2>{category} products:</h2>
+            <Navbar />
+            <h2>{category.toUpperCase()} products:</h2>
             {products.map((product, index) => (
                 <Link to={`/products/${product.id}`} key={index}>
                     <div className='product-container'>

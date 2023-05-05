@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 
 import { Link } from 'react-router-dom';
 
+import { Navbar } from '../../components/Navbar/Navbar';
+
 import api from '../../utils/api';
 
 export function Home() {
@@ -21,16 +23,16 @@ export function Home() {
 
     return (
         <div className='container'>
-            <h1 className='title'>MyStore</h1>
+            <Navbar />
             <h2>Chose a category:</h2>
             {categories.map((categorie, index) => (
-                <Link to={`/products/category/${categorie}`} key={index}>
+                <Link to={`/products/category/${categorie}`} key={index} className='link' >
                     {categorie}
                 </Link>
             ))}
             <h2>Products:</h2>
             {products.map((product, index) => (
-                <Link to={`/products/${product.id}`} key={index}>
+                <Link to={`/products/${product.id}`} key={index} className='link' >
                     <div className='product-container'>
                         <p>{product.title}</p>
                         <p>{product.price}</p>

@@ -1,6 +1,36 @@
+:root {
+  --primary-color: #4747f0;
+  --title-color: #cbdd4a;
+  --text-color: #fff;
+}
+
 * {
   display: 'flex';
   margin: 0;
   padding: 0;
   box-sizing: 'border-box';
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  padding: 2rem;
+  background-color: var(--primary-color);
+}
+
+h1, h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--title-color);
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--text-color);
+}
+
+.link {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--text-color);
+  text-decoration: none;
 }

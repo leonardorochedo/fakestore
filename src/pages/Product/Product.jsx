@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 
 import { Link, useParams } from "react-router-dom";
 
+import { Navbar } from '../../components/Navbar/Navbar';
+
 import api from '../../utils/api';
 
 export function Product() {
@@ -26,7 +28,7 @@ export function Product() {
 
     return (
         <div className='container'>
-                <Link to="/">Back to home</Link>
+                <Navbar />
                 <div className='product-view'>
                     <h1 className='title'>{product.title}</h1>
                     <img src={product.image} alt={product.title} />
