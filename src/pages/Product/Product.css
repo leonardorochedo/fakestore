@@ -1,0 +1,21 @@
+.product-view .title {
+    font-size: 1.5rem;
+}
+
+.product-view img {
+    width: 10rem;
+    border-radius: 15px;
+}
+
+.product-view p {
+    margin: .5rem 0;
+}
+
+.product-view .rating {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-view .description {
+    text-align: left;
+}

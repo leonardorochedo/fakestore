@@ -6,6 +6,8 @@ import { Navbar } from '../../components/Navbar/Navbar';
 
 import api from '../../utils/api';
 
+import './Product.css';
+
 export function Product() {
 
     const { id } = useParams()
@@ -32,13 +34,12 @@ export function Product() {
                 <div className='product-view'>
                     <h1 className='title'>{product.title}</h1>
                     <img src={product.image} alt={product.title} />
-                    <p>Price: ${product.price}</p>
+                    <p>💲{product.price}</p>
                     <div className='rating'>
-                        <p>{product.rate}</p>
-                        <p>{product.count}</p>
+                        <p>⭐{product.rate}</p>
+                        <p>💬{product.count}</p>
                     </div>
-                    <p>{product.category}</p>
-                    <p>{product.description}</p>
+                    <p className='description'>{product.description}</p>
                 </div>
         </div>
     )
