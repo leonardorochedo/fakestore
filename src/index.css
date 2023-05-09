@@ -16,6 +16,7 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
+  scroll-behavior: smooth;
 }
 
 .container {
