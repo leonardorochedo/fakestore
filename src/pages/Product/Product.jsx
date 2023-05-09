@@ -34,11 +34,13 @@ export function Product() {
                 <div className='product-view'>
                     <h1 className='title'>{product.title}</h1>
                     <img src={product.image} alt={product.title} />
-                    <p>💲{product.price}</p>
+                    <p className='price'>💲{product.price}</p>
+                    <h2>Avaliations</h2>
                     <div className='rating'>
                         <p>⭐{product.rate}</p>
                         <p>💬{product.count}</p>
                     </div>
+                    <h2>Description</h2>
                     <p className='description'>{product.description}</p>
                 </div>
         </div>

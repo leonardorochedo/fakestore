@@ -11,6 +11,10 @@
     margin: .5rem 0;
 }
 
+.product-view p.price {
+    font-size: 1.5rem;
+}
+
 .product-view .rating {
     display: flex;
     justify-content: space-around;
@@ -18,4 +22,10 @@
 
 .product-view .description {
     text-align: left;
+}
+
+@media screen and (min-width: 750px) {
+    .product-view img {
+        width: 15rem;
+    }
 }
