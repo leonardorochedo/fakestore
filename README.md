@@ -2,6 +2,10 @@
 
 Loja virtual consumindo a API da https://fakestoreapi.com com o framework ReactJS.
 
+## Visão geral
+
+<img src="https://github.com/leonardorochedo/fakestore/assets/62243365/63dab317-fd2b-4721-a6b3-a8c3bdf2a61e" />
+
 ## Bibliotecas
 
 Utilizei as seguintes bibliotecas:
